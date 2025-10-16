@@ -22,7 +22,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.75em;
-    background: rgb(202, 202, 202);
+    background: rgb(235, 235, 235);
+    border-bottom: 1px solid black;
 }
 
 nav button {
@@ -39,4 +40,17 @@ nav button {
 
 nav button:hover {
     background: rgb(122, 118, 179);
+}
+
+
+footer {
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    background: blue;
+    min-height: 100px;
+    flex-direction: row;
+    gap: 20px;
+    align-content: flex-start;
+    justify-content: space-between;
 }

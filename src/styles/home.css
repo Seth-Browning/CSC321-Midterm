@@ -1,0 +1,26 @@
+
+#title-element {
+    display: block;
+    width: 100%;
+    margin:0;
+    padding-left: 10%;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
+    border-bottom: 1px black solid;
+}
+
+#forum-subgroups {
+    display: inline-block;
+    width: 80%;
+    list-style-type: none;
+    padding: 1em;
+    margin-left: 10%;
+    border-radius: 1em;
+    border: 2px blue solid;
+}
+
+#forum-subgroups li {
+    margin: 0.125em;
+    padding: 0.5rem;
+    border-bottom: 1px black solid;
+}
