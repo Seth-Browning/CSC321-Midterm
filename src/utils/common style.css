@@ -22,15 +22,15 @@
 
 
     /* Colors */
-    --bg-dark: oklch(0.92 0.03 270);
-    --bg: oklch(0.96 0.03 270);
-    --bg-light: oklch(1 0.03 270);
+    --bg-dark: oklch(0.9 0.03 270);
+    --bg: oklch(0.94 0.03 270);
+    --bg-light: oklch(0.98 0.03 270);
     --text: oklch(0.15 0.06 270);
     --text-muted: oklch(0.4 0.06 270);
     --highlight: oklch(1 0.06 270);
     --border: oklch(0.6 0.06 270);
     --border-muted: oklch(0.7 0.06 270);
-    --primary: oklch(0.4 0.1 270);
+    --primary: oklch(62.915% 0.16565 267.531);
     --secondary: oklch(0.4 0.1 90);
     --danger: oklch(0.5 0.06 30);
     --warning: oklch(0.5 0.06 100);
@@ -76,9 +76,16 @@ nav {
     background: var(--bg);
 }
 
+.nav-log-dependent {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-content: flex-end;
+}
 
 .nav-log-dependent[data-active="false"] {
     display: none;
+    
 }
 
 .primary-button {
@@ -109,4 +116,18 @@ nav {
     color: var(--secondary);
     font-weight: bold;
     border-radius: 4px;
+}
+
+.icon {
+    fill: var(--text);
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.small-icon {
+    fill: var(--text);
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
 }
