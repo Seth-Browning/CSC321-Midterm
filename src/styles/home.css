@@ -3,10 +3,10 @@
     background: var(--bg);
     border-radius: 20px;
     display: inline-block;
-    width: 80%;
-    padding: var(--margin-m);
-    margin: var(--margin-xxl);
-    margin-left: 10%;
+    width: 95%;
+    padding: var(--spacing-m);
+    margin: var(--spacing-xxl);
+    margin-left: 2.5%;
 }
 
 #title-card h1 {
@@ -17,14 +17,14 @@
     background: var(--bg);
     border-radius: 20px;
     display: inline-block;
-    width: 80%;
-    padding: var(--margin-m);
-    margin: var(--margin-l);
-    margin-left: 10%;
+    width: 95%;
+    padding: var(--spacing-m);
+    margin: var(--spacing-l);
+    margin-left: 2.5%;
 }
 
 #new-posts-highlight h1 {
-    font-size: var(--margin-l);
+    font-size: var(--spacing-l);
 }
 
 #thread-highlights {
@@ -35,8 +35,8 @@
 
 .thread {
     background: var(--bg-light);
-    padding: var(--margin-s);
-    margin: var(--margin-s);
+    padding: var(--spacing-s);
+    margin: var(--spacing-s) 0;
     border-radius: 8px;
 }
 
@@ -47,7 +47,7 @@
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px var(--text-muted) solid;
-    padding: var(--margin-xxs);
+    padding: var(--spacing-xxs);
 }
 
 .thread-top p {
@@ -66,5 +66,5 @@
 }
 
 .thread .thread-content-preview {
-    line-height: var(--margin-m);
+    line-height: var(--spacing-m);
 }

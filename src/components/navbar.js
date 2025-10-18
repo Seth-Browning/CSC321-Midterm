@@ -8,20 +8,19 @@ class NavBar extends HTMLElement {
         super();
     }
 
-    async connectedCallback() {
-        const response = await fetch("../assets/icons/icons.svg")
-        const svg = await response.text();
-
-
+    connectedCallback() {
+        
         this.innerHTML = `
             <nav>
                 <div id="nav-bar-left">
-                    <p class="home-page-link">Games Forum</p>
+                    <p class="home-page-link">
+                        <a href="./home.html">Games Forum</a>
+                    </p>
                 </div>
 
                 <div id="log-in-options" class="nav-log-dependent" data-active="true">
-                    <button class="primary-button">Log In</button>
-                    <button class="secondary-button">Sign Up</button>
+                    <button class="primary-button" id="to-login">Log In</button>
+                    <button class="secondary-button" id="to-signup">Sign Up</button>
                 </div>
 
                 <div id="logged-in-options" class="nav-log-dependent" data-active="false">
@@ -30,6 +29,10 @@ class NavBar extends HTMLElement {
                 </div>
             </nav>
         `;
+
+        this.querySelector('#to-login').addEventListener('click', () => {
+            window.location.href = "login.html"
+        })
     }
 }
 
