@@ -63,6 +63,13 @@
 
 .thread .thread-creator {
     font-style: italic;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 250ms;
+}
+
+.thread .thread-creator:hover {
+    color: var(--text);
 }
 
 .thread .thread-content-preview {
