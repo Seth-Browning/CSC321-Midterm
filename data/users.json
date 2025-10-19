@@ -2,16 +2,22 @@
     "Zelos": {
         "currentlyOnline": false,
         "joined": "August 23, 2025",
-        "bio": "Loves Zelda games and NOTHING ELSE"
+        "bio": "Loves Zelda games and NOTHING ELSE",
+        "observes_number": 110,
+        "observed_by_number": 10
     },
     "Random Creator": {
         "currentlyOnline": true,
         "joined": "November 5, 2024",
-        "bio": "Who cares?"
+        "bio": "Who cares?",
+        "observes_number": 2500,
+        "observed_by_number": 3700
     },
     "Nintento Enthusiast": {
         "currentlyOnline": true,
         "joined": "January 15, 2025",
-        "bio": "Nintendo"
+        "bio": "Nintendo",
+        "observes_number": 20,
+        "observed_by_number": 7012
     }
 }

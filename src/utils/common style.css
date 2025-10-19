@@ -85,8 +85,7 @@ nav {
 }
 
 .nav-log-dependent[data-active="false"] {
-    display: none;
-    
+    display: none;  
 }
 
 .primary-button {
