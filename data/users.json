@@ -1,3 +1,17 @@
 {
-    
+    "Zelos": {
+        "currentlyOnline": false,
+        "joined": "August 23, 2025",
+        "bio": "Loves Zelda games and NOTHING ELSE"
+    },
+    "Random Creator": {
+        "currentlyOnline": true,
+        "joined": "November 5, 2024",
+        "bio": "Who cares?"
+    },
+    "Nintento Enthusiast": {
+        "currentlyOnline": true,
+        "joined": "January 15, 2025",
+        "bio": "Nintendo"
+    }
 }
