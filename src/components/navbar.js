@@ -33,6 +33,16 @@ class NavBar extends HTMLElement {
         this.querySelector('#to-login').addEventListener('click', () => {
             window.location.href = "login.html"
         })
+
+        const user = localStorage.getItem('loggedInUser');
+
+        if (user) {
+            document.getElementById('log-in-options').dataset.active = "false"
+            document.getElementById('logged-in-options').dataset.active = "true"
+        } else {
+            document.getElementById('log-in-options').dataset.active = "true"
+            document.getElementById('logged-in-options').dataset.active = "false"
+        }
     }
 }
 
