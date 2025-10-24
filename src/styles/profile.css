@@ -5,7 +5,8 @@
     text-align: center;
 }
 
-#user-not-found[data-active="false"] {
+#user-not-found[data-active="false"],
+#user-info-bar[data-active="false"] {
     display: none;
 }
 
