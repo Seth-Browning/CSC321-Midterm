@@ -1,6 +1,6 @@
 
 #title-card {
-    background: var(--bg);
+    background: radial-gradient(ellipse farthest-corner at top left, var(--bg-light), var(--bg-dark));
     border-radius: 20px;
     display: inline-block;
     width: 95%;
@@ -14,17 +14,19 @@
 }
 
 #new-posts-highlight {
-    background: var(--bg);
-    border-radius: 20px;
     display: inline-block;
     width: 95%;
-    padding: var(--spacing-m);
     margin: var(--spacing-l);
     margin-left: 2.5%;
 }
 
+.thread:nth-child(odd) {
+    background: var(--bg-m-light);
+}
+
 #new-posts-highlight h1 {
     font-size: var(--spacing-l);
+    background: none;
 }
 
 #thread-highlights {
@@ -36,8 +38,11 @@
 .thread {
     background: var(--bg-light);
     padding: var(--spacing-s);
-    margin: var(--spacing-s) 0;
-    border-radius: 8px;
+    background: var(--bg);
+}
+
+.thread + .thread {
+    margin-top: 2px;
 }
 
 .thread-top {
@@ -46,7 +51,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1px var(--text-muted) solid;
     padding: var(--spacing-xxs);
 }
 
@@ -58,7 +62,13 @@
 
 .thread .thread-title {
     color: var(--text);
-    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 250ms;
+}
+
+.thread .thread-title:hover {
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 .thread .thread-creator {
@@ -69,9 +79,16 @@
 }
 
 .thread .thread-creator:hover {
-    color: var(--text);
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
-.thread .thread-content-preview {
-    line-height: var(--spacing-m);
+.first-thread {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.last-thread {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

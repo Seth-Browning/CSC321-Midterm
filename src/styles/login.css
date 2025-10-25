@@ -47,8 +47,12 @@ form h1 {
 
 .form-input {
     flex: 1 0 auto;
-    border: 2px var(--bg-dark) solid;
+    border: 1px var(--bg-dark) solid;
     background: var(--bg-light);
+    outline: none;
+    font-size: 1rem;
+    color: var(--text);
+    padding: 3px 4px;
 }
 
 input[type="text"], input[type="password"] {

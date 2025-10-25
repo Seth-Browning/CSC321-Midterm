@@ -24,7 +24,9 @@
 
     /* Colors */
     --bg-dark: oklch(0.78 0 270);
+    --bg-m-dark: oklch(0.83 0 270);
     --bg: oklch(0.88 0 270);
+    --bg-m-light: oklch(0.93 0 270);
     --bg-light: oklch(0.98 0 270);
     --text: oklch(20.812% 0 269.406);
     --text-muted: oklch(0.4 0 270);
@@ -42,7 +44,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-dark: oklch(0.1 0 270);
+        --bg-m-dark: oklch(0.15 0 270);
         --bg: oklch(0.2 0 270);
+        --bg-m-light: oklch(0.25 0 270);
         --bg-light: oklch(0.3 0 270);
         --text: oklch(0.96 0 270);
         --text-muted: oklch(0.76 0 270);
