@@ -1,0 +1,38 @@
+
+#thread-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-height: 5px;
+    margin: var(--spacing-l) auto;
+}
+
+.thread-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: hidden; 
+}
+
+.user-inforamtion {
+    display: inline-block;
+}
+
+.user-information h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.thread-entry-inner {
+    min-width: 80%;
+    background: var(--bg);
+    padding: var(--spacing-s);
+    border-radius: 5px;
+}
+
+.thread-entry-inner .thread-entry-header {
+    width: 100%;
+}
