@@ -34,6 +34,7 @@
     --border: oklch(0.6 0.06 270);
     --border-muted: oklch(0.7 0.06 270);
     --primary: oklch(62.915% 0.16565 267.531);
+    --off-primary: oklch(55.65% 0.2083 265.937);
     --secondary: oklch(79.368% 0.16261 82.878);
     --danger: oklch(49.936% 0.1359 30.918);
     --warning: oklch(67.8% 0.1273 98.596);
@@ -54,6 +55,7 @@
         --border: oklch(0.4 0.06 270);
         --border-muted: oklch(0.3 0.06 270);
         --primary: oklch(62.915% 0.16565 267.531);
+        --off-primary: oklch(54.043% 0.19499 266.092);
         --secondary: oklch(0.76 0.1 90);
         --danger: oklch(65.943% 0.12647 31.015);
         --warning: oklch(77.243% 0.12801 100.844);
