@@ -1,5 +1,5 @@
 
-#login-container {
+#register-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,7 +35,7 @@ form h1 {
     justify-content: flex-start;
     align-content: center;
     flex-wrap: none;
-    gap: var(--spacing-xxs);
+    gap: var(--spacing-s);
 }
 
 .form-text {
@@ -43,6 +43,9 @@ form h1 {
     margin: 0;
     align-self: center;
     font-weight: bold;
+    flex: 1 0 auto;
+    width: 30%;
+    text-align: right;
 }
 
 .form-input {
@@ -53,6 +56,8 @@ form h1 {
     font-size: 1rem;
     color: var(--text);
     padding: 3px 4px;
+    width: 60%;
+    height: initial;
 }
 
 input[type="text"], input[type="password"] {
@@ -70,7 +75,7 @@ input[type="checkbox"]:hover {
     
 }
 
-#submit-login {
+#submit-register {
     align-self: center;
     margin-top: var(--spacing-xs);
 }

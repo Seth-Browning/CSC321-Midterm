@@ -1,6 +1,6 @@
 
 #title-card {
-    background: radial-gradient(ellipse farthest-corner at top left, var(--bg-light), var(--bg-dark));
+    background: radial-gradient(ellipse farthest-corner at top center, var(--bg-light), var(--bg-dark));
     border-radius: 20px;
     display: inline-block;
     width: 95%;

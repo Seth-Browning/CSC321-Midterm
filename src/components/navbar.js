@@ -34,6 +34,10 @@ class NavBar extends HTMLElement {
             window.location.href = "login.html"
         })
 
+        this.querySelector('#to-signup').addEventListener('click', () => {
+            window.location.href = "register.html"
+        })
+
         const user = localStorage.getItem('loggedInUser');
 
         if (user) {
