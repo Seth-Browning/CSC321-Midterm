@@ -20,6 +20,7 @@ const loadPostContent = async (postId) => {
         if (!post) return;
 
         document.getElementById('thread-title').innerText = post.title
+        document.title = post.title
 
         const postElement = `<thread-post user-name="${post.poster}" message="${post.message}"></thread-post>`
 

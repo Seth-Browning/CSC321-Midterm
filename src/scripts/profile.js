@@ -39,6 +39,8 @@ const loadUser = async (userKey) => {
 
         resetDisplay()
 
+        document.title = `${userKey}'s Profile`
+
         document.getElementById('user-name').innerText = userKey;
         document.getElementById('user-joined').innerText = `Joined: ${user.joined}`
         document.getElementById('user-bio').innerText = user.bio

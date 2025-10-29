@@ -20,7 +20,17 @@
     margin-left: 2.5%;
 }
 
-.thread:nth-child(odd) {
+thread-highlight:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+thread-highlight:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+thread-highlight:nth-child(odd) {
     background: var(--bg-m-light);
 }
 
@@ -35,13 +45,13 @@
     flex-direction: column;
 }
 
-.thread {
+thread-highlight {
     background: var(--bg-light);
     padding: var(--spacing-s);
     background: var(--bg);
 }
 
-.thread + .thread {
+thread-highlight + thread-highlight {
     margin-top: 2px;
 }
 
@@ -60,25 +70,25 @@
     padding: 0;
 }
 
-.thread .thread-title {
+thread-highlight .thread-title {
     color: var(--text);
     cursor: pointer;
     transition: color 250ms;
 }
 
-.thread .thread-title:hover {
+thread-highlight .thread-title:hover {
     color: var(--secondary);
     text-decoration: underline;
 }
 
-.thread .thread-creator {
+thread-highlight .thread-creator {
     font-style: italic;
     cursor: pointer;
     color: var(--text-muted);
     transition: color 250ms;
 }
 
-.thread .thread-creator:hover {
+thread-highlight .thread-creator:hover {
     color: var(--secondary);
     text-decoration: underline;
 }
