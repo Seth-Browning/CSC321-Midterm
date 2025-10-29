@@ -46,6 +46,13 @@
     font-size: 1rem;
     font-weight: bold;
     color: var(--text);
+    cursor: pointer;
+    transition: color 250ms;
+}
+
+.user-name:hover {
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 .thread-entry-inner {
@@ -58,5 +65,8 @@
 
 .thread-entry-content {
     color: var(--text);
-    
+}
+
+.thread-content-paragraph {
+    white-space: pre-line;
 }

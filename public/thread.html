@@ -7,7 +7,8 @@
 
     <script src="../src/utils/common script.js"></script>
     <script src="../src/components/navbar.js"></script>
-    <script src="../src/scripts/home.js" defer></script>
+    <script src="../src/components/thread-post.js"></script>
+    <script src="../src/scripts/thread.js" defer></script>
     <link rel="stylesheet" href="../src/utils/common style.css">
     <link rel="stylesheet" href="../src/styles/thread.css">
 </head>
@@ -18,21 +19,6 @@
         <h1 id="thread-title">Sample Title</h1>
     </div>
 
-    <div id="thread-content">
-        <article class="thread-entry main-post">
-            <div class="user-information">
-                <h1 class="user-name">Sample user name</h1>
-            </div>
-            <div class="thread-entry-inner">
-                <header class="thread-entry-header"></header>
-                <div class="thread-entry-content">
-                    <p class="thread-content-paragraph">
-                        Sample thread content
-                    </p>
-                </div>
-                <footer class="thread-entry-footer"></footer>
-            </div>
-        </article>
-    </div>
+    <div id="thread-content"></div>
 </body>
 </html>

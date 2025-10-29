@@ -1,3 +1,29 @@
 {
-    
+    "1": {
+        "title": "Windwaker Review",
+        "message": "It has been some time since I was a kid and played windwaker for the first time, but that impression still stays with me. The game was amazing then, but how does it hold up now? lorem ipsum dolor emmit...",
+        "uploaded": "October 18, 2025 8:10 PM",
+        "edited": "October 18, 2025 8:16 PM",
+        "likes": 0,
+        "dislikes": 0,
+        "poster": "Random Creator"
+    },
+    "2": {
+        "title": "Breath of the Wild Review",
+        "message": "I honestly just want to be done writing these sample texts, but there's still more that I need to write. In the meantime, I'll just continue listening to my Chrisitan music.",
+        "uploaded": "October 17, 2025 3:22 AM",
+        "edited": "October 17, 2025 3:22 AM",
+        "likes": 2,
+        "dislikes": 5,
+        "poster": "Zelos"
+    },
+    "3": {
+        "title": "Mario Odyssey was ahead of its time",
+        "message": "To be, or not to be. That is the question. OVERATED. Can you tell I'm bored?",
+        "uploaded": "September 21, 2024 5:28 PM",
+        "edited": "September 21, 2024 5:30 PM",
+        "likes": 15,
+        "dislikes": 3,
+        "poster": "Nintento Enthusiast"
+    }
 }
