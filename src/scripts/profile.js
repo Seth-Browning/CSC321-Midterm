@@ -3,6 +3,7 @@ const userName = params.get('user')
 
 const userNotFound = document.getElementById('user-not-found')
 const userInfoBar = document.getElementById('user-info-bar')
+const threadHighlights = document.getElementById('thread-highlights')
 
 const resetDisplay = () => {
     userNotFound.dataset.active = "false"
@@ -53,4 +54,39 @@ const loadUser = async (userKey) => {
     }
 }
 
-loadUser(userName)
+/**
+ * 
+ * @param {string} userId 
+ */
+const loadThreads = async (userId) => {
+    if (!userId) return;
+
+    try {
+
+        const request = await fetch('../../data/threads.json')
+        const allThreads = await request.json();
+
+        console.log(allThreads)
+        // const threadsFromUser = allThreads.filter((threadObj) => threadObj.poster === userId)
+        // const threadElements = allThreads.forEach((thread) => {
+        //     threadHighlights.insertAdjacentHTML('beforeend', `<thread-highlight title="${thread.title}" thread-id="${thread}" user-name=${thread.poster}></thread-highlight>`)
+        // })
+
+        Object.keys(allThreads).forEach(thread => {
+            console.log(thread)
+            if(allThreads[thread].poster == userId) {
+                const th = allThreads[thread]
+                threadHighlights.insertAdjacentHTML('beforeend', `<thread-highlight title="${th.title}" thread-id="${thread}" user-name="${th.poster}"></thread-highlight>`)
+            }
+        })
+
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+
+(async function() {
+    loadUser(userName)
+    loadThreads(userName)
+})();
