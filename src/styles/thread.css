@@ -70,3 +70,68 @@
 .thread-content-paragraph {
     white-space: pre-line;
 }
+
+#comment-area {
+    width: 90%;
+    background: var(--bg);
+    padding: var(--spacing-m);
+    border-radius: 15px;
+    margin: var(--spacing-l) auto;
+}
+
+#comment-area h1 {
+    color: var(--text);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.text-editor {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.editable-text-field {
+    border: 1px var(--text) solid;
+    min-height: 200px;
+    width: 100%;
+    padding: var(--spacing-s);
+    border-radius: 10px;
+    background: var(--bg-m-light);
+    color: var(--text);
+}
+
+.editable-text-field:focus {
+    outline: none;
+}
+
+.editor-button {
+    font-family: var(--ff);
+    background: none;
+    border: none;
+    font-size: 1.0625rem;
+    font-weight: normal;
+    color: var(--text);
+    cursor: pointer;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    flex: 1;
+    border-radius: 5px;
+    transition: background 250ms;
+}
+
+.editor-button:hover {
+    background: var(--bg-light);
+}
+
+.text-editor-toolbar {
+    display: flex;
+    gap: var(--spacing-s);
+}
+
+.text-editor-toolbar section {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}

@@ -32,3 +32,14 @@ const loadPostContent = async (postId) => {
 }
 
 loadPostContent(postId)
+
+
+const format = (command) => {
+    document.execCommand(command, false, null);
+}
+
+document.querySelectorAll('.editor-button').forEach(button => {
+    button.addEventListener('click', () => {
+        format(button.dataset.type)
+    })
+})

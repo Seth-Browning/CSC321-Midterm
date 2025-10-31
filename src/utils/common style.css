@@ -36,7 +36,7 @@
     --primary: oklch(62.915% 0.16565 267.531);
     --off-primary: oklch(55.65% 0.2083 265.937);
     --secondary: oklch(79.368% 0.16261 82.878);
-    --danger: oklch(49.936% 0.1359 30.918);
+    --danger: oklch(58.272% 0.20294 31.62);
     --warning: oklch(67.8% 0.1273 98.596);
     --success: oklch(60.394% 0.14141 153.747);
     --info: oklch(40.622% 0.15116 260.135);
@@ -57,7 +57,7 @@
         --primary: oklch(62.915% 0.16565 267.531);
         --off-primary: oklch(54.043% 0.19499 266.092);
         --secondary: oklch(0.76 0.1 90);
-        --danger: oklch(65.943% 0.12647 31.015);
+        --danger: oklch(57.144% 0.16759 32.397);
         --warning: oklch(77.243% 0.12801 100.844);
         --success: oklch(76.31% 0.1447 156.312);
         --info: oklch(64.682% 0.17381 259.641);       
@@ -120,6 +120,16 @@ nav {
     border: 1px var(--secondary) solid;
     padding: var(--spacing-xs);
     color: var(--secondary);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.danger-button {
+    cursor: pointer;
+    background: var(--danger);
+    border: 1px var(--danger) solid;
+    padding: var(--spacing-xs);
+    color: var(--text);
     font-weight: bold;
     border-radius: 4px;
 }

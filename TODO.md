@@ -7,3 +7,4 @@
 - Add Tags for posts
 - Allow the user to make mock posts (rich text editor prefered)
 - Allow the user to make mock comments on threads.
+- Threads appear on profile page _(complete)_
