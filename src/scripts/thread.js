@@ -38,8 +38,29 @@ const format = (command) => {
     document.execCommand(command, false, null);
 }
 
+const toggleBold = () => {
+    const selection = window.getSelection();
+    if (!selection) return;
+    if (!selection.rangeCount) return;
+    console.log(selection)
+    if (!selection.anchorNode.parentElement) return;
+    if (!selection.anchorNode?.parentElement.classList.contains('editable-text-field')) return
+
+    const range = selection.getRangeAt(0)
+
+
+    const strong = document.createElement('strong')
+    strong.appendChild(range.extractContents())
+    range.insertNode(strong)
+}
+
 document.querySelectorAll('.editor-button').forEach(button => {
     button.addEventListener('click', () => {
+        if (button.dataset.type === 'bold') {
+            toggleBold()
+            return
+        }
+
         format(button.dataset.type)
     })
 })
