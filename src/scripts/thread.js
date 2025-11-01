@@ -32,3 +32,12 @@ const loadPostContent = async (postId) => {
 }
 
 loadPostContent(postId)
+
+document.querySelector('text-editor').addEventListener('text-editor-submit', (e) => {
+    const commentText = e.detail.text;
+    if (commentText === '') return;
+    
+    e.target.clearText();
+    const newComment = `<thread-post user-name="<i>Guest User</i>" message="${e.detail.text}" active="false"></thread-post>`
+    threadContentContainer.insertAdjacentHTML('beforeend', newComment)
+})

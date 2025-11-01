@@ -82,7 +82,6 @@
 #comment-area h1 {
     color: var(--text);
     font-size: 1.25rem;
-    text-align: center;
 }
 
 .text-editor {
@@ -105,35 +104,6 @@
 
 .editable-text-field:focus {
     outline: none;
-}
-
-.editor-button {
-    font-family: var(--ff);
-    background: none;
-    border: none;
-    font-size: 1.0625rem;
-    font-weight: normal;
-    color: var(--text);
-    cursor: pointer;
-    padding: var(--spacing-xxs) var(--spacing-xs);
-    flex: 1;
-    border-radius: 5px;
-    transition: background 250ms;
-}
-
-.editor-button:hover {
-    background: var(--bg-light);
-}
-
-.text-editor-toolbar {
-    display: flex;
-    gap: var(--spacing-s);
-}
-
-.text-editor-toolbar section {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
 }
 
 .button-bar {

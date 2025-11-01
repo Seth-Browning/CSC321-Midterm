@@ -2,7 +2,8 @@
 class ThreadPost extends HTMLElement {
     static observedAttributes = [
         "user-name",
-        "message"
+        "message",
+        'active'
     ]
 
     constructor() {
@@ -12,6 +13,7 @@ class ThreadPost extends HTMLElement {
     connectedCallback() {
         const name = this.getAttribute('user-name') ?? ""
         const message = this.getAttribute('message') ?? ""
+        const active = this.getAttribute('active') ?? 'true';
 
         this.innerHTML = `
             <article class="thread-entry main-post">
@@ -27,10 +29,11 @@ class ThreadPost extends HTMLElement {
                 </div>
             </article>
         `
-
-        this.querySelector('.user-name').addEventListener('click', () => {
-            window.location.href = `profile.html?user=${name}`
-        })
+        if (active === "true") {
+            this.querySelector('.user-name').addEventListener('click', () => {
+                window.location.href = `profile.html?user=${name}`
+            })
+        }
     }
 }
 

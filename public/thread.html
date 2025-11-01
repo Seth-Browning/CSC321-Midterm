@@ -8,6 +8,7 @@
     <script src="../src/utils/common script.js"></script>
     <script src="../src/components/navbar.js"></script>
     <script src="../src/components/thread-post.js"></script>
+    <script src="../src/components/text-editor.js"></script>
     <script src="../src/scripts/thread.js" defer></script>
     <link rel="stylesheet" href="../src/utils/common style.css">
     <link rel="stylesheet" href="../src/styles/thread.css">
@@ -23,15 +24,11 @@
 
 
 
-        <div id="comment-area">
-            <div class="text-editor">
-                <div class="editable-text-field" contenteditable="true"></div>
-                <div class="button-bar">
-                    <button type="submit" class="primary-button">Comment</button>
-                    <button class="danger-button">Cancel</button>
-                </div>
-            </div>
-        </div>
+    </div>
+
+    <div id="comment-area">
+        <h1>Comment</h1>
+        <text-editor confirm-button-text="Comment"></text-editor>
     </div>
 
 </body>
