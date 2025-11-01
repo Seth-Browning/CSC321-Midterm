@@ -6,7 +6,9 @@
         "edited": "October 18, 2025 8:16 PM",
         "likes": 0,
         "dislikes": 0,
-        "poster": "Random Creator"
+        "poster": "Random Creator",
+        "posted_in": ["Puzzle"],
+        "tags": []
     },
     "2": {
         "title": "Breath of the Wild Review",
@@ -15,7 +17,9 @@
         "edited": "October 17, 2025 3:22 AM",
         "likes": 2,
         "dislikes": 5,
-        "poster": "Zelos"
+        "poster": "Zelos",
+        "posted_in": ["Puzzle"],
+        "tags": []
     },
     "3": {
         "title": "Mario Odyssey was ahead of its time",
@@ -24,6 +28,8 @@
         "edited": "September 21, 2024 5:30 PM",
         "likes": 15,
         "dislikes": 3,
-        "poster": "Nintento Enthusiast"
+        "poster": "Nintento Enthusiast",
+        "posted_in": ["Platformer"],
+        "tags": []
     }
 }
