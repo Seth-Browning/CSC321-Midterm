@@ -1,10 +1,10 @@
 
 #title-card {
-    background: radial-gradient(ellipse farthest-corner at top center, var(--bg-light), var(--bg-dark));
-    border-radius: 20px;
+    background: var(--striped-background);
+    border-radius: 5px;
     display: inline-block;
     width: 95%;
-    padding: var(--spacing-m);
+    padding: var(--spacing-xs);
     margin: var(--spacing-xxl);
     margin-left: 2.5%;
 }
