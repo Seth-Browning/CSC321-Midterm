@@ -1,4 +1,16 @@
 {
+    "0": {
+        "title": "Site Rules",
+        "message": "There are rules to follow when posting and interacting on this site, they're all pretty common sense, so I don't think I should have to explain them. Sample text.",
+        "uploaded": "January 1, 2023",
+        "edited": "June 8, 2025",
+        "likes": 0,
+        "dislikes": 0,
+        "poster": "moderator",
+        "posted_in": [],
+        "tags": [],
+        "allow_comments": false
+    },
     "1": {
         "title": "Windwaker Review",
         "message": "It has been some time since I was a kid and played windwaker for the first time, but that impression still stays with me. The game was amazing then, but how does it hold up now? lorem ipsum dolor emmit...",
@@ -8,7 +20,8 @@
         "dislikes": 0,
         "poster": "Random Creator",
         "posted_in": ["Puzzle"],
-        "tags": []
+        "tags": [],
+        "allow_comments": true
     },
     "2": {
         "title": "Breath of the Wild Review",
@@ -19,7 +32,8 @@
         "dislikes": 5,
         "poster": "Zelos",
         "posted_in": ["Puzzle"],
-        "tags": []
+        "tags": [],
+        "allow_comments": true
     },
     "3": {
         "title": "Mario Odyssey was ahead of its time",
@@ -30,6 +44,7 @@
         "dislikes": 3,
         "poster": "Nintento Enthusiast",
         "posted_in": ["Platformer"],
-        "tags": []
+        "tags": [],
+        "allow_comments": true
     }
 }

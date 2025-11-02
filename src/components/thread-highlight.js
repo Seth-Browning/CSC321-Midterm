@@ -16,6 +16,10 @@ class ThreadHighlight extends HTMLElement {
         const threadId = this.getAttribute('thread-id')
 
         this.innerHTML = `
+            <style>
+                
+            </style>
+
             <div class="thread">
                 <div class="thread-top">
                     <p class="thread-title">${title}</p>

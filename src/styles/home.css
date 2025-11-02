@@ -14,7 +14,7 @@
     color: var(--text);
 }
 
-#new-posts-highlight {
+.new-posts-highlight {
     display: inline-block;
     width: 95%;
     margin: var(--spacing-l);
@@ -62,12 +62,12 @@ thread-highlight:nth-child(odd) {
     background: var(--bg-m-light);
 }
 
-#new-posts-highlight h1 {
+.new-posts-highlight h1 {
     font-size: var(--spacing-l);
     background: none;
 }
 
-#thread-highlights {
+.thread-highlights {
     width: 100%;
     display: flex;
     flex-direction: column;
