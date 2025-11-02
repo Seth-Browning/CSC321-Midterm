@@ -29,7 +29,7 @@ const loadUser = async (userKey) => {
 
     try {
 
-        const response = await fetch('../../data/users.json');
+        const response = await fetch('https://raw.githubusercontent.com/Seth-Browning/CSC321-Midterm/main/data/users.json');
         const users = await response.json();
 
         const user = users[userKey]
@@ -63,7 +63,7 @@ const loadThreads = async (userId) => {
 
     try {
 
-        const request = await fetch('../../data/threads.json')
+        const request = await fetch('https://raw.githubusercontent.com/Seth-Browning/CSC321-Midterm/main/data/threads.json')
         const allThreads = await request.json();
 
         console.log(allThreads)

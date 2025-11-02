@@ -51,13 +51,3 @@ class NavBar extends HTMLElement {
 }
 
 customElements.define("nav-bar", NavBar);
-
-/*
-
-<svg class="icon"><use href="#icon-user"></use></svg>
-<svg class="icon"><use href="#icon-gear"></use></svg>
-
-<svg class="icon"><use href="#icon-user"></use></svg>
-<svg class="icon"><use href="#icon-gear"></use></svg>
-
- */

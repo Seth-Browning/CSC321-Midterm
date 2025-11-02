@@ -7,7 +7,7 @@ const populateSubforum = async (forumName) => {
     document.title = forumName;
 
     try {
-        const req = await fetch('../../data/threads.json')
+        const req = await fetch('https://raw.githubusercontent.com/Seth-Browning/CSC321-Midterm/main/data/threads.json')
         const jsonReq = await req.json()
 
         Object.keys(jsonReq).forEach(thread => {

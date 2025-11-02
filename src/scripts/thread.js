@@ -13,7 +13,7 @@ const loadPostContent = async (postId) => {
 
     try {
         
-        const request = await fetch('../../data/threads.json')
+        const request = await fetch('https://raw.githubusercontent.com/Seth-Browning/CSC321-Midterm/main/data/threads.json')
         const allPosts = await request.json();
 
         const post = allPosts[postId]
