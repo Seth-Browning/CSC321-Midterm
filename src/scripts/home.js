@@ -1,6 +1,8 @@
 
-// document.querySelectorAll('.thread-creator').forEach(element => {
-//     element.addEventListener('click', () => {
-//         window.location.href = `profile.html?user=${element.innerHTML}`
-//     })
-// })
+if (!localStorage.getItem('loggedInUser')) {
+    document.getElementById('post-button').style.display = "none"
+} else {
+    document.getElementById('post-button').addEventListener('click', () => {
+        window.location.href = 'post.html'
+    })
+}
